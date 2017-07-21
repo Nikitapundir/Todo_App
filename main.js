@@ -32,4 +32,7 @@ ngtodo.controller('mainController' , function($scope){
 		obj.details=details;
 		$scope.ListofTodos.push(obj);
 	}
+    $scope.deleteaTodo = function(index){
+		$scope.ListofTodos.splice(index, 1);
+    }
 });

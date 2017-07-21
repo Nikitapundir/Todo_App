@@ -2,6 +2,7 @@
 <head>
     <script type="text/javascript" src="angular.min.js"></script>
 	<script type="text/javascript" src="main.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 	 #todo{
 		border:1px solid black;
@@ -19,6 +20,7 @@
 		<div ng-repeat="list in ListofTodos | filter: query" id ="todo">
 			<h2>{{list.title}}</h2>
 			<p>{{list.details}}</p>
+		 <i class="fa fa-trash-o" ng-click="deleteaTodo($index);"></i>
 		</div>
 </body>
 </html>
