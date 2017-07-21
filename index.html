@@ -12,10 +12,11 @@
 
 	<div></div>
 	<div ng-controller="mainController">
-	   <input type="text" ng-model="user.title">
-	   <input type="text" ng-model="user.details">
+	   <input type="text" ng-model="query" placeholder="search">
+	   TITLE:<input type="text" ng-model="user.title">
+	   DETAILS:<input type="text" ng-model="user.details">
 	   <button ng-click="addaTodo(user.title,user.details)">ADD</button>
-		<div ng-repeat="list in ListofTodos" id ="todo">
+		<div ng-repeat="list in ListofTodos | filter: query" id ="todo">
 			<h2>{{list.title}}</h2>
 			<p>{{list.details}}</p>
 		</div>

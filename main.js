@@ -12,17 +12,17 @@ ngtodo.controller('mainController' , function($scope){
 		details:"I must do my homework"
 	},
 	{
-        title: "Do my homework",
-		details:"I must do my homework"
+        title: "Do breakfast",
+		details:"I must do my breakfast"
 
 	},
 	{
-		title: "Do my homework",
-		details:"I must do my homework"
+		title: "Do my dinner",
+		details:"I must do my dinner"
 	},
 	{
-		title: "Do my homework",
-		details:"I must do my homework"
+		title: "Do my lunch",
+		details:"I must do my lunch"
 	}
 	];
 	$scope.addaTodo = function(title,details){
