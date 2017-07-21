@@ -25,4 +25,11 @@ ngtodo.controller('mainController' , function($scope){
 		details:"I must do my homework"
 	}
 	];
+	$scope.addaTodo = function(title,details){
+		/* $scope.ListofTodo.push({title,details}); */
+		var obj={};
+		obj.title=title;
+		obj.details=details;
+		$scope.ListofTodos.push(obj);
+	}
 });
